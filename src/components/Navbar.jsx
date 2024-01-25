@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#6b6b6b] text-white'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#6e6d6d] text-white'>
       <div>
         
       </div>
