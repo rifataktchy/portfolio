@@ -1,25 +1,29 @@
 import React from 'react';
-import background from '../assets/background.jpg';
+import background2 from '../assets/background2.png';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div name='about' className='w-full h-screen bg-[#454646] text-white'>
+    <div name='about' className='w-full h-screen bg-[#454646] text-white' style={{ backgroundImage: `url(${background2})`, backgroundSize: 'cover' }}>
         <div className='flex flex-col justify-center items-center w-full h-full'>
-           <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
-              <div className='sm:text-right pb-8 pl-4'>
-                <p className='text-4xl font-bold inline'>About</p>
+           <div className='max-w-[1000px] w-full gap-8'>
+              <div className='sm:text-left pb-8 pl-4'>
+                <p className='text-4xl font-bold inline'>About Me</p>
               </div>
-               
-               <div></div>
+            
+              
             </div>
-            <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-                  <div className='sm:text-right text-4xl font-bold'>
-                  <p>Nice to meet you. Please take a look around.</p>
-                  </div>
-                  <div>
-                  <p>Transforming visions into immersive web experiences with the perfect blend of HTML, CSS, and JavaScript magic, while bringing dynamic interactivity to life through the power of React.js. Crafting digital stories that captivate, inspire, and seamlessly connect users with the extraordinary world of the web.</p>  
-                  </div>
-            </div>
+            <motion.div 
+              className='max-w-[1000px] w-full  gap-8 px-4'
+              initial={{ x: -1000, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              
+              
+                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>With a educational background in Management Information Systems and electronics and communication engineering, I've refined my skills in developing dynamic websites using HTML, CSS, JavaScript, and React.js. My experience as a Frontend Developer at Crebsol Ltd., combined with my experience as an IT teacher, has equipped me with a deep understanding of both the technical and educational aspects of technology. My career journey has been marked by a dedication to continuous learning and adapting, from designing responsive web interfaces to fostering technology-friendly learning environments. I am passionate about leveraging my expertise in technology to create impactful digital solutions and contribute to the growth of organizations.</motion.p>  
+              
+            </motion.div>
            
         </div>
     </div>
@@ -27,3 +31,5 @@ const About = () => {
 }
 
 export default About;
+
+
