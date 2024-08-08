@@ -17,7 +17,7 @@ const Home = () => {
     </div>  
     <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
       <div className='sm:text-right text-1xl font-bold py-10'>
-        <p>I’m a Web developer specializing in building and occasionally designing exceptional digital experiences.</p>
+        <p>I’m a Web developer passionate about building responsive, dynamic web applications that not only look great but also deliver a seamless user experience across all devices.</p>
       </div>
       <div className='pl-20 pb-30'>
         <img src={profilePicture} alt='Profile Picture' className='w-80 h-80 rounded-full mr-8' />
